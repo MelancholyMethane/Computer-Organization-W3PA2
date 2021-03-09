@@ -20,7 +20,7 @@ reset_map:
 	sub	$t1, $t0, $s0		# t1 = t0 - s0
 	blt	$t1, $zero, main	# if (t1 < 0)
 	sw	$zero, ($t0)		# *t0 = 0
-	sub	$t0, $t0, 4
+	subi	$t0, $t0, 4
 	j	reset_map
 	
 main:
