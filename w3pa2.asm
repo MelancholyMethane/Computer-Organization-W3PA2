@@ -59,7 +59,7 @@ listen:
 	
 	sll	$t0, $v0, 2		# t0 = pos
 	add	$t0, $s0, $t0		# t0 = map[pos]
-	lw	$t1, ($t0)		# t1 = *p0
+	lw	$t1, ($t0)		# t1 = *t0
 	beq	$t1, $zero, not_found	# if(t1 == 0) not_found
 	
 	# must be found now
